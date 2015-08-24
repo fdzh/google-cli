@@ -243,7 +243,7 @@ winsz = fcntl.ioctl(sys.stdout, termios.TIOCGWINSZ, "1234")
 columns = struct.unpack("HH", winsz)[1]
 
 # Connect to Google and request the result page.
-conn = HTTPSConnection("www.google.com")
+conn = HTTPSConnection("guge.party")
 
 while nav == "n" or nav == "p":
     conn.request("GET", url)
